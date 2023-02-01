@@ -1,10 +1,10 @@
 package com.example.board2.article.entity;
 
 import com.example.board2.user.entity.SiteUser;
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Getter

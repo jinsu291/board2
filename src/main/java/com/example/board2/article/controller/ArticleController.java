@@ -5,7 +5,6 @@ import com.example.board2.article.form.ArticleForm;
 import com.example.board2.article.service.ArticleService;
 import com.example.board2.user.entity.SiteUser;
 import com.example.board2.user.service.UserService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -15,6 +14,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.Valid;
 import java.security.Principal;
 
 @RequestMapping("/article")
