@@ -1,5 +1,6 @@
 package com.example.board2.article.entity;
 
+import com.example.board2.user.entity.SiteUser;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,4 +24,6 @@ public class Article {
     private LocalDateTime createDate;
     private LocalDateTime modifyDate;
 
+    @ManyToOne
+    private SiteUser author;
 }

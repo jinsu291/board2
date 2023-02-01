@@ -3,6 +3,8 @@ package com.example.board2.article.controller;
 import com.example.board2.article.entity.Article;
 import com.example.board2.article.form.ArticleForm;
 import com.example.board2.article.service.ArticleService;
+import com.example.board2.user.entity.SiteUser;
+import com.example.board2.user.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -21,6 +23,7 @@ import java.security.Principal;
 public class ArticleController {
 
     private final ArticleService articleService;
+    private final UserService userService;
 
     @GetMapping("/list")
     public String list(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
