@@ -1,8 +1,8 @@
 package com.example.board2;
 
-import com.example.board2.article.entity.Article;
-import com.example.board2.article.service.ArticleService;
-import com.example.board2.user.service.UserService;
+import com.example.board2.app.article.entity.Article;
+import com.example.board2.app.article.service.ArticleService;
+import com.example.board2.app.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
