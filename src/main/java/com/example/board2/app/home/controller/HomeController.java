@@ -1,4 +1,4 @@
-package com.example.board2;
+package com.example.board2.app.home.controller;
 
 import com.example.board2.app.article.entity.Article;
 import com.example.board2.app.article.service.ArticleService;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/")
 @RequiredArgsConstructor
 @Controller
-public class MainController {
+public class HomeController {
 
     private final ArticleService articleService;
     private final UserService userService;
